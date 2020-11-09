@@ -13,7 +13,7 @@ export class questionService{
         return this.httpClient.get<question[]>("http://localhost:3000/questionBank");
     }
 
-    sayHi():String{
+    sayHi():string{
         return "HI"
     }
 
@@ -21,10 +21,10 @@ export class questionService{
         export class question{
             constructor(
                 public id:number,
-                public prompt:String,
-                public a:String,
-                public b:String,
-                public c:String,
-                public d:String,
-                public answer:boolean){}
+                public prompt:string,
+                public a:string,
+                public b:string,
+                public c:string,
+                public d:string,
+                public answer:string){}
         }

@@ -1,6 +1,6 @@
 {"questionBank":[
-    {"id":1,"prompt":"Jupiter has over ____ known moons ",
-        "a":"95000", "b":"79", "c":"100","d":"sdagas", "answer": "b"},	
+    {"id":1,"prompt":"Jupiter has over ____ known moons (pick closest answer)",
+        "a":"561", "b":"79", "c":"206","d":"52", "answer": "b"},		
     {"id":2,"prompt":"What is the 5th letter in the alphabet?",
         "a":"d", "b":"f", "c":"g","d":"e", "answer": "d"},
     {"id":3,"prompt":"What is the correct way to do an alertbox in JS?",
@@ -19,5 +19,6 @@
         "a":"call Function;", "b":"!execute function()", "c":"function()","d":"function function()", "answer": "c"},
     {"id":10,"prompt":"How do you print to console?",
         "a":"console.out.print(hi)", "b":"console.log(12)", "c":"print(14)","d":"out.console(15)", "answer": "b"},
-    {}
-]}
+    {"id":11,"prompt":"?",
+        "a":"", "b":"", "c":"","d":"", "answer": ""}
+  ]}
