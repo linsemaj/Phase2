@@ -1,0 +1,48 @@
+<div class="center">
+    <h1>Quiz: Answer 10 questions</h1>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bar" aria-controls="bar"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bar">
+            <ul class="navbar-nav mr-auto container-fluid">
+                <li class="nav-item gray" *ngFor="let item of [].constructor(10); let i = index"><a href="#"
+                        (click)="setQNum(i)">{{i+1}}</a></li>
+                <li class="nav-item gray"><a href="#" (click)="setQNum(10)">Finish</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="text-center">
+    <P>Legend: Green= answered, orange=marked, gray= unanswered, purple=current</P>
+
+
+    <div><button class="btn btn-primary float-left big-btn" (click)="qDown()">Prev</button></div>
+    <div><button class="btn btn-primary float-right big-btn" (click)="qUp()">Next</button></div>
+    <div class="clearfix container text-center widenDiv">
+
+        <div *ngIf= "questionObject[qNum].id !=11">
+            <h1>QUESITON {{(qNum+1)}}) {{questionObject[qNum].prompt}}</h1>
+        </div>
+        <div class="container text-left">
+            <div *ngIf= "questionObject[qNum].id !=11">
+                <h3><input type="radio" name="answer" value="a" id="a"><label for="a"> &nbsp;A) {{questionObject[qNum].a}}</label><br></h3>
+                <h3><input type="radio" name="answer" value="a" id="b"><label for="b"> &nbsp;B) {{questionObject[qNum].b}}</label><br></h3>
+                <input type="radio" name="answer" value="a" id="c"><h3><label for="c"> &nbsp;C) {{questionObject[qNum].c}}</label></h3><br>
+                <h3><input type="radio" name="answer" value="a" id="d"><label for="d"> &nbsp;D) {{questionObject[qNum].d}}</label><br></h3>
+                <button class="btn btn-primary">Save selection</button>
+            </div>
+        </div>
+        <div *ngIf= "questionObject[qNum].id ==11">
+            <h1>Click <button class="btn btn-primary" (click)=grade()>submit</button> for grade</h1>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,45 @@
+.big-btn{
+    padding:  30% 0.5%;
+    height: fit-content;
+}
+.widenDiv{
+    width: 90%;
+
+}
+.center{
+    text-align: center;
+}
+
+.green{
+    background-color: green;
+}
+.gray{
+    background-color: lightgray;
+}
+.orange{
+    background-color: orange;
+}
+.purp{
+    background-color: purple;
+}
+li{
+    width: 9%;
+    height: 100%;
+}
+a{
+    display: block;
+    width:100%;
+    height:100%;
+    color: white;
+}
+a:hover{
+    background-color: yellow;
+    color: teal;
+}
+
+.gray{
+    background-color: gray;
+}
+.max-height{
+    height:100%
+}
